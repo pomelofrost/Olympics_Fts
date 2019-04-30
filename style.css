@@ -52,9 +52,9 @@ table {
 
 @font-face{
     font-family:trade;
-    src: url(font/TradeGot);
+    src: url(font/TradeGot.ttf);
 }
 
-html{
-    font-family:trade, Helvetica, sans-serif;
+p{
+    font-family: trade, Helvetica, sans-serif;
 }
