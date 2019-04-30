@@ -55,6 +55,6 @@ table {
     src: url(font/TradeGot.ttf);
 }
 
-p{
-    font-family: trade, Helvetica, sans-serif;
+html {
+    font-family: trade-gothic-next, sans-serif;
 }
