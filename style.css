@@ -55,7 +55,7 @@ html {
 }
 
 body{
-    padding:1em;  
+    padding:3em;  
 }
 
 header{
@@ -64,6 +64,8 @@ header{
 }
 
 header img{
+    width:18%;
+    height:auto;
     grid-column-start:1;
     grid-column-end:2;
 }
