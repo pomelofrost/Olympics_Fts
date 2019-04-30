@@ -53,3 +53,22 @@ table {
 html {
     font-family: trade-gothic-next, sans-serif;
 }
+
+body{
+    padding:1em;  
+}
+
+header{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+header img{
+    grid-column-start:1;
+    grid-column-end:2;
+}
+
+header div{
+    grid-column-start:4;
+    grid-column-end:6;
+}
