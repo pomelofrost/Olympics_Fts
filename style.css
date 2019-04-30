@@ -50,11 +50,6 @@ table {
 
 /*************** CUSTOM CSS *****************/
 
-@font-face{
-    font-family:trade;
-    src: url(font/TradeGot.ttf);
-}
-
 html {
     font-family: trade-gothic-next, sans-serif;
 }
