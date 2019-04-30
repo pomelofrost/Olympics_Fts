@@ -49,3 +49,12 @@ table {
 
 
 /*************** CUSTOM CSS *****************/
+
+@font-face{
+    font-family:trade;
+    src: url(font/TradeGot);
+}
+
+html{
+    font-family:trade, Helvetica, sans-serif;
+}
