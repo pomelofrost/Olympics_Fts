@@ -66,13 +66,18 @@ header{
 header img{
     width:50%;
     height:auto;
+    grid-column-start:5;
+    grid-column-end:6;
+}
+
+header nav{
     grid-column-start:1;
-    grid-column-end:2;
+    grid-column-end:4;
 }
 
 header div{
-    grid-column-start:4;
-    grid-column-end:6;
+    grid-column-start:1;
+    grid-column-end:3;
 }
 
 header p{
@@ -80,6 +85,35 @@ header p{
     font-weight:200;
     line-height: 24px;
 }
+
+.circle{
+    height: 50px;
+    width: 50px;
+    stroke-width:2;
+    border-radius: 50%;
+}
+
+#blue{
+    stroke:blue;
+}
+
+#black{
+    stroke:black;
+}
+
+#red{
+    stroke:red;
+}
+
+#yellow{
+    stroke:yellow;
+}
+
+#green{
+    stroke:green;
+}
+
+
 
 .vidwrapper{
     position: relative;
@@ -107,6 +141,11 @@ h2{
 }
 
 nav{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+header nav{
     display:grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
