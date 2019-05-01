@@ -97,3 +97,6 @@ header p{
     height: 100%;
 }
 
+footer p{
+    text-align: center;
+}
