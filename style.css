@@ -58,32 +58,57 @@ body{
     padding:3em;  
 }
 
+p{
+    font-size:18px;
+    font-weight:200;
+    line-height: 24px;
+    color:black;
+}
+
+h1{
+    font-size:48px;
+    font-weight:700;
+    color:black;
+}
+
+h2{
+    font-size: 18px;
+    font-weight:700;
+    color:black;
+}
+
+
 header{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+    justify-content: center;
+}
+
+.navWrapper{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+nav{
     display:grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-header img{
-    width:50%;
-    height:auto;
+.logoWrapper{
     grid-column-start:5;
     grid-column-end:6;
+    grid-row-start:1;
+    grid-row-end:2;
+    justify-self: end;
 }
 
-header nav{
-    grid-column-start:1;
-    grid-column-end:4;
-}
-
-header div{
-    grid-column-start:1;
-    grid-column-end:3;
-}
-
-header p{
-    font-size:18px;
-    font-weight:200;
-    line-height: 24px;
+.logoWrapper img{
+    width:30%;
+    height:auto;
+    margin-right: 0;
 }
 
 .circle{
@@ -94,25 +119,51 @@ header p{
 }
 
 #blue{
-    stroke:blue;
+    stroke:#1986C7;
+    stroke-width: 3;
+    fill:transparent;
+}
+
+#blue:hover{
+    stroke-width:4
 }
 
 #black{
-    stroke:black;
+    stroke:#000000;
+    stroke-width: 3;
+    fill:transparent;
+
+}
+#black:hover{
+    stroke-width:4
 }
 
 #red{
-    stroke:red;
+    stroke:#E11D27;
+    stroke-width: 3;
+    fill:transparent;
+}
+#red:hover{
+    stroke-width:4;
 }
 
 #yellow{
-    stroke:yellow;
+    stroke:#f3c413;
+    stroke-width: 3;
+    fill:transparent;
+}
+#yellow:hover{
+    stroke-width:4;
 }
 
 #green{
-    stroke:green;
+    stroke:#00A23F;
+    stroke-width: 3;
+    fill:transparent;
 }
-
+#green:hover{
+    stroke-width:4;
+}
 
 
 .vidwrapper{
@@ -135,20 +186,7 @@ header p{
     padding:1em 1em 3em 1em;
 }
 
-h2{
-    font-size: 24px;
-    color:#CDCDCD;
-}
 
-nav{
-    display:grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
-header nav{
-    display:grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
 
 ul a{
     font-weight:700;
@@ -163,6 +201,43 @@ a:hover{
 a:visited{
     text-decoration: none;
     color:#CDCDCD;
+}
+
+.mainWrapper{
+    display:grid;
+    grid-template-columns: 14% 54% 32%;
+    grid-template-rows:362px 588px auto;
+}
+
+
+.sideTitle{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.textFlow{
+    display:block;
+    position:absolute;
+    transform-origin: 0 0;
+    margin-left:120px;
+    transform:rotate(90deg);
+}
+
+.sideDescription{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+.mainGif{
+    grid-column-start:2;
+    grid-column-end: 4;
+    grid-row-start:1;
+    grid-row-end:3;
+    width:75vw;
 }
 
 footer p{
