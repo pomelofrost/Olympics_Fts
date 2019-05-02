@@ -194,7 +194,7 @@ nav ul{
 
 
 
-ul a{
+a{
     font-weight:700;
     font-size:24px;
     color:#CDCDCD;
@@ -244,6 +244,7 @@ a:visited{
     grid-row-start:1;
     grid-row-end:3;
     width:75vw;
+    box-shadow:0px 20px 40px rgba(0,0,0,0.12);
 }
 
 .stationary{
@@ -254,7 +255,7 @@ a:visited{
 }
 
 .stationary img{
-    width:95%;
+    width:100%;
     overflow:hidden;
 }
 .rules{
@@ -262,11 +263,20 @@ a:visited{
     grid-column-end: 4;
     grid-row-start:3;
     grid-row-end:4;
+    border: solid 1px;
+    color:#cdcdcd;
 }
 
 .rules h1{
     text-align: center;
-    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    padding-top:0.5em;
+    border-bottom:solid 1px;
+    color:#cdcdcd;
+}
+
+.ruleContent{
+    padding:2em;
 }
 
 li{
@@ -275,8 +285,12 @@ li{
     
     font-size:24px;
     line-height: 30px;
+    color:black;
 }
 
+footer{
+    padding:1em;
+}
 footer p{
     text-align: center;
 }
