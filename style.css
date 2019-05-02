@@ -83,6 +83,7 @@ header{
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 100%;
     justify-content: center;
+    padding-bottom:3em;
 }
 
 .navWrapper{
@@ -95,6 +96,11 @@ header{
 nav{
     display:grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+nav ul{
+    border-right:solid 1px;
+    color:#cdcdcd;
 }
 
 .logoWrapper{
@@ -238,6 +244,37 @@ a:visited{
     grid-row-start:1;
     grid-row-end:3;
     width:75vw;
+}
+
+.stationary{
+    grid-column-start:2;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end:4;
+}
+
+.stationary img{
+    width:95%;
+    overflow:hidden;
+}
+.rules{
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start:3;
+    grid-row-end:4;
+}
+
+.rules h1{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+li{
+    list-style-type:lower-roman;
+    list-style-position: outside;
+    
+    font-size:24px;
+    line-height: 30px;
 }
 
 footer p{
