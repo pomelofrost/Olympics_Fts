@@ -212,7 +212,8 @@ a:visited{
     display:grid;
     justify-content:end;
     grid-template-columns: 14% 54% 32%;
-    grid-template-rows:440px 588px auto;
+    grid-template-rows:400px 200px auto auto;
+    grid-row-gap: 2em;
 }
 
 
@@ -240,11 +241,20 @@ a:visited{
 
 .mainGif{
     grid-column-start:2;
-    grid-column-end: 4;
+    grid-column-end:3;
     grid-row-start:1;
     grid-row-end:3;
     width:100%;
     box-shadow:0px 20px 40px rgba(0,0,0,0.12);
+}
+
+.gallery{
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start:1;
+    grid-row-end:3;
+    padding-left:2em;
+    align-self:end;
 }
 
 .stationary{
@@ -258,6 +268,7 @@ a:visited{
     width:100%;
     overflow:hidden;
 }
+
 .rules{
     grid-column-start:3;
     grid-column-end: 4;
@@ -277,15 +288,30 @@ a:visited{
 
 .ruleContent{
     padding:2em;
+    list-style-position: outside;
+    padding-left:3em;
+
 }
 
 li{
     list-style-type:lower-roman;
-    list-style-position: outside;
     font-size:24px;
     line-height: 30px;
     color:black;
     text-transform: lowercase;
+}
+
+#tab-button{
+    display:flex;
+}
+
+#tab-button li{
+    list-style-type:none;
+}
+
+.tab-contents img{
+    width:100%;
+    height:auto;
 }
 
 footer{

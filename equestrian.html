@@ -9,9 +9,43 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://use.typekit.net/nrp2wdm.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-
+        <script type="text/javascript" src="libraries/jquery-3.3.1.min.js"></script>
         
+        <script>
+            $(function() {
+          var $tabButtonItem = $('#tab-button li'),
+              $tabSelect = $('#tab-select'),
+              $tabContents = $('.tab-contents'),
+              activeClass = 'is-active';
+
+          $tabButtonItem.first().addClass(activeClass);
+          $tabContents.not(':first').hide();
+
+          $tabButtonItem.find('a').on('click', function(e) {
+            var target = $(this).attr('href');
+
+            $tabButtonItem.removeClass(activeClass);
+            $(this).parent().addClass(activeClass);
+            $tabSelect.val(target);
+            $tabContents.hide();
+            $(target).show();
+            e.preventDefault();
+          });
+
+          $tabSelect.on('change', function() {
+            var target = $(this).val(),
+                targetSelectNum = $(this).prop('selectedIndex');
+
+            $tabButtonItem.removeClass(activeClass);
+            $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+            $tabContents.hide();
+            $(target).show();
+          });
+        });
+        </script>
+    
     </head>
+    
     <body>
         <header>
             <div class="logoWrapper">
@@ -68,15 +102,32 @@
                 <div class="ruleTitle">
                     <h1>Rules</h1>
                 </div>
-                <div class="ruleContent">
+                <ul class="ruleContent">
                     <li>on the other side of this paper, trace the female figureskater</li>
                     <li>DRAW her partner</li>
                     <li>you MUST use the BLUE marker/ colored-pencil</li>
                     <li>you may use the other colors + stickers available</li>
                     <li>have FUN! be creative, feel free to add anything else you would like</li>
+                </ul>
+            </div>
+                <div class="gallery">
+                   <div class="tab-button-wrapper">
+                    <ul id="tab-button">
+                        <li><a href="#tab01">1</a></li>
+                        <li><a href="#tab02">2</a></li>
+                    </ul>
+                    </div>
+
+                    <div id="tab01" class="tab-contents">
+                        <img src="img/equestrian/1.jpg" alt="">
+                    </div>
+                    <div id="tab02" class="tab-contents">
+                        <img src="img/equestrian/2.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            </div>
+
+            
         </main>
          <footer>
             <p>A project by <a href="http://serina.design/">Serina Liu</a> and <a href="http://xinranwu.com/">Sherry Wu</a>.</p>
