@@ -303,6 +303,7 @@ li{
 
 #tab-button{
     display:flex;
+    flex-wrap: wrap;
 }
 
 #tab-button li{
