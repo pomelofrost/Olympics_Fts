@@ -228,7 +228,7 @@ a:visited{
     display:block;
     position:absolute;
     transform-origin: 0 0;
-    margin-left:100px;
+    margin-left:75px;
     transform:rotate(90deg);
 }
 
