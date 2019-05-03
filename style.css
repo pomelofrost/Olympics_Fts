@@ -306,9 +306,11 @@ li{
     flex-wrap: wrap;
 }
 
+
 #tab-button li{
     list-style-type:none;
 }
+
 
 .tab-contents img{
     width:100%;

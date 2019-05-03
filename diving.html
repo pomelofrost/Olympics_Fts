@@ -9,6 +9,40 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://use.typekit.net/nrp2wdm.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <script type="text/javascript" src="libraries/jquery-3.3.1.min.js"></script>
+        
+        <script>
+            $(function() {
+          var $tabButtonItem = $('#tab-button li'),
+              $tabSelect = $('#tab-select'),
+              $tabContents = $('.tab-contents'),
+              activeClass = 'is-active';
+
+          $tabButtonItem.first().addClass(activeClass);
+          $tabContents.not(':first').hide();
+
+          $tabButtonItem.find('a').on('click', function(e) {
+            var target = $(this).attr('href');
+
+            $tabButtonItem.removeClass(activeClass);
+            $(this).parent().addClass(activeClass);
+            $tabSelect.val(target);
+            $tabContents.hide();
+            $(target).show();
+            e.preventDefault();
+          });
+
+          $tabSelect.on('change', function() {
+            var target = $(this).val(),
+                targetSelectNum = $(this).prop('selectedIndex');
+
+            $tabButtonItem.removeClass(activeClass);
+            $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+            $tabContents.hide();
+            $(target).show();
+          });
+        });
+        </script>   
     </head>
     <body>
         <header>
@@ -73,6 +107,171 @@
                     <li>have FUN! be creative, feel free to add anything else you would like</li>
                 </ul>
             </div>
+            <div class="gallery">
+                   <div class="tab-button-wrapper">
+                    <ul id="tab-button">
+                        <li><a href="#tab01">1</a></li>
+                        <li><a href="#tab02"> 2</a></li>
+                        <li><a href="#tab03"> 3</a></li>
+                        <li><a href="#tab04"> 4</a></li>
+                        <li><a href="#tab05"> 5</a></li>
+                        <li><a href="#tab06"> 6</a></li>
+                        <li><a href="#tab07"> 7</a></li>
+                        <li><a href="#tab08"> 8</a></li>
+                        <li><a href="#tab09"> 9</a></li>
+                        <li><a href="#tab10"> 10</a></li>
+                        <li><a href="#tab11"> 11</a></li>
+                        <li><a href="#tab12"> 12</a></li>
+                        <li><a href="#tab13"> 13</a></li>
+                        <li><a href="#tab14"> 14</a></li>
+                        <li><a href="#tab15"> 15</a></li>
+                        <li><a href="#tab16"> 16</a></li>
+                        <li><a href="#tab17"> 17</a></li>
+                        <li><a href="#tab18"> 18</a></li>
+                        <li><a href="#tab19"> 19</a></li>
+                        <li><a href="#tab20"> 20</a></li>
+                        <li><a href="#tab21"> 21</a></li>
+                        <li><a href="#tab22"> 22</a></li>
+                        <li><a href="#tab23"> 23</a></li>
+                        <li><a href="#tab24"> 24</a></li>
+                        <li><a href="#tab25"> 25</a></li>
+                        <li><a href="#tab26"> 26</a></li>
+                        <li><a href="#tab27"> 27</a></li>
+                        <li><a href="#tab28"> 28</a></li>
+                        <li><a href="#tab29"> 29</a></li>
+                        <li><a href="#tab30"> 30</a></li>
+                        <li><a href="#tab31"> 31</a></li>
+                        <li><a href="#tab32"> 32</a></li>
+                        <li><a href="#tab33"> 33</a></li>
+                        <li><a href="#tab34"> 34</a></li>
+                        <li><a href="#tab35"> 35</a></li>
+                        <li><a href="#tab36"> 36</a></li>
+                        <li><a href="#tab37"> 37</a></li>
+                        <li><a href="#tab38"> 38</a></li>
+                        <li><a href="#tab39"> 39</a></li>
+                    </ul>
+                    </div>
+
+                    <div id="tab01" class="tab-contents">
+                        <img src="img/diving/1.jpg" alt="">
+                    </div>
+                    <div id="tab02" class="tab-contents">
+                        <img src="img/diving/2.jpg" alt="">
+                    </div>
+                    <div id="tab03" class="tab-contents">
+                        <img src="img/diving/3.jpg" alt="">
+                    </div>
+                    <div id="tab04" class="tab-contents">
+                        <img src="img/diving/4.jpg" alt="">
+                    </div>
+                    <div id="tab05" class="tab-contents">
+                        <img src="img/diving/5.jpg" alt="">
+                    </div>
+                    <div id="tab06" class="tab-contents">
+                        <img src="img/diving/6.jpg" alt="">
+                    </div>
+                    <div id="tab07" class="tab-contents">
+                        <img src="img/diving/7.jpg" alt="">
+                    </div>
+                    <div id="tab08" class="tab-contents">
+                        <img src="img/diving/8.jpg" alt="">
+                    </div>
+                    <div id="tab09" class="tab-contents">
+                        <img src="img/diving/9.jpg" alt="">
+                    </div>
+                    <div id="tab10" class="tab-contents">
+                        <img src="img/diving/10.jpg" alt="">
+                    </div>
+                    <div id="tab11" class="tab-contents">
+                        <img src="img/diving/11.jpg" alt="">
+                    </div>
+                    <div id="tab12" class="tab-contents">
+                        <img src="img/diving/12.jpg" alt="">
+                    </div>
+                    <div id="tab13" class="tab-contents">
+                        <img src="img/diving/13.jpg" alt="">
+                    </div>
+                    <div id="tab14" class="tab-contents">
+                        <img src="img/diving/14.jpg" alt="">
+                    </div>
+                    <div id="tab15" class="tab-contents">
+                        <img src="img/figure/15.jpg" alt="">
+                    </div>
+                    <div id="tab16" class="tab-contents">
+                        <img src="img/diving/16.jpg" alt="">
+                    </div>
+                    <div id="tab17" class="tab-contents">
+                        <img src="img/diving/17.jpg" alt="">
+                    </div>
+                    <div id="tab18" class="tab-contents">
+                        <img src="img/diving/18.jpg" alt="">
+                    </div>
+                    <div id="tab19" class="tab-contents">
+                        <img src="img/diving/19.jpg" alt="">
+                    </div>
+                    <div id="tab20" class="tab-contents">
+                        <img src="img/diving/20.jpg" alt="">
+                    </div>
+                    <div id="tab21" class="tab-contents">
+                        <img src="img/diving/21.jpg" alt="">
+                    </div>
+                    <div id="tab22" class="tab-contents">
+                        <img src="img/diving/22.jpg" alt="">
+                    </div>
+                    <div id="tab23" class="tab-contents">
+                        <img src="img/diving/23.jpg" alt="">
+                    </div>
+                    <div id="tab24" class="tab-contents">
+                        <img src="img/diving/24.jpg" alt="">
+                    </div>
+                    <div id="tab25" class="tab-contents">
+                        <img src="img/diving/25.jpg" alt="">
+                    </div>
+                    <div id="tab26" class="tab-contents">
+                        <img src="img/diving/26.jpg" alt="">
+                    </div>
+                    <div id="tab27" class="tab-contents">
+                        <img src="img/diving/27.jpg" alt="">
+                    </div>
+                    <div id="tab28" class="tab-contents">
+                        <img src="img/diving/28.jpg" alt="">
+                    </div>
+                    <div id="tab29" class="tab-contents">
+                        <img src="img/diving/29.jpg" alt="">
+                    </div>
+                    <div id="tab30" class="tab-contents">
+                        <img src="img/diving/30.jpg" alt="">
+                    </div>
+                    <div id="tab31" class="tab-contents">
+                        <img src="img/diving/31.jpg" alt="">
+                    </div>
+                    <div id="tab32" class="tab-contents">
+                        <img src="img/diving/32.jpg" alt="">
+                    </div>
+                    <div id="tab33" class="tab-contents">
+                        <img src="img/diving/33.jpg" alt="">
+                    </div>
+                    <div id="tab34" class="tab-contents">
+                        <img src="img/diving/34.jpg" alt="">
+                    </div>
+                    <div id="tab35" class="tab-contents">
+                        <img src="img/diving/35.jpg" alt="">
+                    </div>
+                    <div id="tab36" class="tab-contents">
+                        <img src="img/diving/36.jpg" alt="">
+                    </div>
+                    <div id="tab37" class="tab-contents">
+                        <img src="img/diving/37.jpg" alt="">
+                    </div>
+                    <div id="tab38" class="tab-contents">
+                        <img src="img/diving/38.jpg" alt="">
+                    </div>
+                    <div id="tab39" class="tab-contents">
+                        <img src="img/diving/39.jpg" alt="">
+                    </div>
+                
+                    
+                </div>
             </div>
         </main>
          <footer>
