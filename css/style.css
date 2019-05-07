@@ -77,6 +77,12 @@ h2{
     color:black;
 }
 
+h3{
+    font-size:18px;
+    font-weight:700;
+    color:#cdcdcd;
+    padding-bottom:1em;
+}
 
 header{
     padding:3em;  
@@ -218,7 +224,7 @@ a:visited{
     display:grid;
     justify-content:end;
     grid-template-columns: 14% 54% 32%;
-    grid-template-rows:25% 30% auto auto;
+    grid-template-rows:25em 19em auto auto auto;
     grid-row-gap: 2em;
 }
 
@@ -255,7 +261,7 @@ a:visited{
     box-shadow:0px 20px 40px rgba(0,0,0,0.12);
 }
 
-.gallery{
+.sideGif{
     grid-column-start:3;
     grid-column-end: 4;
     grid-row-start:1;
@@ -265,11 +271,24 @@ a:visited{
     align-self:end;
 }
 
+.sideGif img{
+    width:100%;
+}
+.gallery{
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start:3;
+    grid-row-end:4;
+    padding-left:2em;
+    padding-bottom:23%;
+    align-self:end;
+}
+
 .stationary{
     grid-column-start:2;
     grid-column-end: 3;
-    grid-row-start:3;
-    grid-row-end:4;
+    grid-row-start:4;
+    grid-row-end:5;
 }
 
 .stationary img{
@@ -280,8 +299,8 @@ a:visited{
 .rules{
     grid-column-start:3;
     grid-column-end: 4;
-    grid-row-start:3;
-    grid-row-end:4;
+    grid-row-start:4;
+    grid-row-end:5;
     border: solid 1px;
     color:#cdcdcd;
 }
