@@ -360,6 +360,33 @@ li{
     height:auto;
 }
 
+.mainContent{
+    grid-column-start:2;
+    grid-column-end: 4;
+}
+.mainContent p{
+    padding-bottom: 1em;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.mainContent h3{
+    font-size: 1.25em;
+    line-height: 1.5em;
+    padding-top:0.5em;
+    padding-bottom:1em;
+    font-weight:700;
+    color:black;
+}
+.mainContent li{
+    list-style-type:circle;
+    list-style-position: outside;
+    font-weight:300;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color:black;
+    padding-bottom:0.5em;
+}
+
 footer{
     padding:1em;
     background: white;
