@@ -281,8 +281,8 @@ a:visited{
     padding-left:2em;
     grid-column-start:4;
     grid-column-end: 5;
-    grid-row-start:3;
-    grid-row-end:4;
+    grid-row-start:4;
+    grid-row-end:5;
 }
 
 .stationary img{
@@ -293,16 +293,16 @@ a:visited{
 .ruleTitle{
     grid-column-start:2;
     grid-column-end: 3;
-    grid-row-start:3;
-    grid-row-end:4;
+    grid-row-start:4;
+    grid-row-end:5;
     padding-top:5em;
 }
 
 .ruleContent{
     grid-column-start:3;
     grid-column-end: 4;
-    grid-row-start:3;
-    grid-row-end:4;
+    grid-row-start:4;
+    grid-row-end:5;
     padding-top:5em;
     list-style-position: outside;
     padding-left:3em;
@@ -320,8 +320,8 @@ li{
 .tab-button-wrapper{
     grid-column-start:3;
     grid-column-end: 4;
-    grid-row-start:4;
-    grid-row-end:5;
+    grid-row-start:3;
+    grid-row-end:4;
     padding-left:2em;
     justify-self:end;
     padding-top:5em;
@@ -342,16 +342,16 @@ li{
     padding-top:5em;
     grid-column-start:2;
     grid-column-end: 3;
-    grid-row-start:4;
-    grid-row-end:5;
+    grid-row-start:3;
+    grid-row-end:4;
 
 }
 .tab-contents{
     padding-top:5em;
     grid-column-start:4;
     grid-column-end: 5;
-    grid-row-start:4;
-    grid-row-end:5;
+    grid-row-start:3;
+    grid-row-end:4;
     padding-left:2em;
 }
 
